@@ -1,0 +1,82 @@
+#+TITLE: Reference Site Outline
+NOTES:
+ Needed Screenshots from Uriel
+   - [ ] Word A11y checker location
+   - [ ] Alt Text Box and right click menu
+   - [ ] PPT A11y checker location
+
+* Homepage
+- Overview
+- Site Description
+* Word
+** How to run checker
+** List of common issues
+- Headings
+- Whitespace
+- Tables
+- Images
+  - Alt text
+- Unclear links
+** Formatting tools
+- Rulers
+  - Tab stops
+  - Indentation
+- Section breaks
+  - Columns
+- Space before/after paragraph
+** Images
+** Tables
+** Headings
+- Navigation pane
+* PowerPoint
+** List of common issues
+- Titles
+- Reading order
+- Tables
+- Unclear links
+** Formatting tools
+** Embedded audio or video
+** Slide Master
+- Creating a high-content slide
+- Adding design elements
+** Animations
+* PDF
+** List of common issues
+- Headings
+- Tables
+- Lists
+- Alt text
+- Untagged content
+** Tags
+- General
+- Tables
+- Lists
+** Order
+- Order panel
+** Content
+- New tag from selection
+** Table Editor
+** Cropping Scans
+* Video
+** Uploading
+** Captioning
+- Labeling Speakers
+- Maybe something about text editors
+** Amara
+** Convert to transcript
+* Other
+** Alt text and video description
+- Equations
+** Headings
+** HTML?
+- Wave
+- WCAG
+** Color contrast
+** Font
+- Size
+- Family
+** Hyperlinks
+** Differences between software
+- Adobe Acrobat DC
+- Office 2019 vs 365
+** Ordered vs unordered lists
