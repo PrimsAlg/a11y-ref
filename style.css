@@ -7,7 +7,7 @@ body {
     width: 80%;
 }
 
-main p, main ul {
+main p, main ul, aside ul {
     font-size: larger;
     line-height: 1.25em;
     margin-left: auto;
@@ -15,11 +15,11 @@ main p, main ul {
     width: 90%;
 }
 
-main a {
+main a, aside a {
     color: #88d0c6;
 }
 
-main a:visited {
+main a:visited, aside a:visited {
     color: #9dce4d;
 }
 
@@ -92,4 +92,8 @@ nav li a {
     padding: 1em 0em;
     text-align: center;
     text-decoration: none;
+}
+
+.selected {
+    background-color: #473b57;
 }
