@@ -1,6 +1,6 @@
 # Accessibility Reference Site
 ## How to view the site
-The most basic way to view the site is to download the repository as a .zip file from the Code download dropdown. Unzip the folder, and open overview.html in your browser. From there you can navigate like a regular website.
+The most basic way to view the site is to download the repository as a .zip file from the Code download dropdown. Unzip the folder, and open overview.html in your browser. From there you can navigate like a regular website.  
 **NOTE:** This project will get updated frequently, so if you download this way, you will need to redownload whenever you would like to have the latest version. You can keep your copy up to date by cloning it with git.
 ### Cloning with git
 This is optional, but is encouraged if you would like to stay up-to-date with the repository.
