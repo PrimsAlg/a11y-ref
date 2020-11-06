@@ -1,9 +1,4 @@
 #+TITLE: Reference Site Outline
-NOTES:
- Needed Screenshots from Uriel
-   - [ ] Word A11y checker location
-   - [ ] Alt Text Box and right click menu
-   - [ ] PPT A11y checker location
 
 * Homepage
 - Overview
@@ -39,6 +34,7 @@ NOTES:
 ** Slide Master
 - Creating a high-content slide
 - Adding design elements
+- How to create a themed slide template (video)
 ** Animations
 * PDF
 ** List of common issues
@@ -67,6 +63,9 @@ NOTES:
 * Other
 ** Alt text and video description
 - Equations
+- Graphs
+- General images
+- What level of verbosity?
 ** Headings
 ** HTML?
 - Wave
