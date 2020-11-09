@@ -46,9 +46,8 @@ main a:visited, aside a:visited {
 
 h2, h3 {
     color: #fbf1c7;
-    margin-left: 2em;
+    text-align: center;
 }
-
 h4 {
     color: #fbf1c7;
 }
@@ -221,5 +220,15 @@ h1 {
 
     .dropdown:hover .dropdown-content {
         display: block;
+    }
+
+    h2 {
+        margin-left: 2em;
+        text-align: left;
+    }
+
+    h3 {
+        margin-left: 3.5em;
+        text-align:left
     }
 }
