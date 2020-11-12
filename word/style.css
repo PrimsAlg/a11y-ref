@@ -1,0 +1,49 @@
+.bank {
+    display: flex;
+    align-items: center;
+    padding-left: 4rem;
+}
+
+.image {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 1rem;
+}
+
+.bank p, .centered-image p {
+    margin: 0;
+}
+
+.bank > p {
+    margin-left: 0.5em;
+}
+
+.imglist {
+    font-size: initial;
+}
+
+li.bank {
+    padding: 0.25rem 0;
+}
+
+.vert-bank {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.centered-image {
+    margin: 0;
+    padding-top: 1rem;
+}
+
+.centered-image img {
+    width: 100%;
+}
+
+@media (min-width: 1088px) {
+    .centered-image img {
+        width: 925px;
+    }
+}
