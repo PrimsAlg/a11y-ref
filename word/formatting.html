@@ -3,6 +3,7 @@
     <meta charset="utf-8">
     <title>Formatting Tools</title>
     <link rel="stylesheet" type="text/css" href="../style.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="../script.js" defer></script>
   </head>
@@ -82,7 +83,75 @@
       </nav>
     </div>
     <main>
-      <p>Lorem Ipsum</p>
+      <h2>How formatting blocks are defined</h2>
+
+      <h2>Using the ruler</h2>
+      <p>The ruler is home to the indentation markers and tab stops, both of which are fast and efficient manners of formatting horizontal space in a document. The left and right indentation markers allow for quick modification of a paragraph's indentation settings, including first line indent and hanging indent. Tab stops can be added to denote the length of tabs, which can aid in alignment without the use of tables.</p>
+
+      <h3>Indentation markers</h3>
+      <p>There are two indentation markers, one for the left indent (figure 1) and one for the right indent (figure 2). The right indent simply defines the point at which a paragraph will line wrap. The left indent does this as well, but also provides the option to indent the first line differently from the rest of the paragraph. While the right indent is simply a single slider, the left indent is made up of three sections. The bottom rectangle adjusts the location of both the first line and hanging indents. The bottom pointed marker controls the location of the hanging indent, and the top one controls the first line indent.</p>
+      <div class="bank">
+        <div class="image">
+          <img src="img/left-indent.svg" width="75" alt="A vector drawing of the left indent marker. It is made up of three parts. The top two are two pentagons shaped such that each could be formed by a rectangle with a triangle affixed to one side. They point at each other in a sort of hourglass fashion. Below the bottom pentagon is a rectangle with the same width as the rest of the marker.">
+          <p>Fig. 1</p>
+        </div>
+        <div class="image">
+          <img src="img/right-indent.svg" width="75" alt="A vector drawing of the right indent marker. It has the same pentagonal shape pointing up from the bottom half of the ruler as in the left indent, but lacks the top marker and the rectangular marker.">
+          <p>Fig. 2</p>
+        </div>
+      </div>
+
+      <h3>Tab stops</h3>
+      <p>Tab stops define at what points tabs will align to. On the top of the vertical ruler, there is a button that cycles through the different types of tab stops, as well as the two left indentation items.</p>
+      <ul class="imglist">
+        <li class="bank">
+          <img src="img/left-tab-stop.svg" width="50" alt="A vector drawing of the symbol for a left aligned tab stop. It is a right angle with one side pointing up and the other pointing right.">
+          <p>The left tab stop is the default, and aligns the left side of the text after the tab to the tab stop.</p>
+        </li>
+        <li class="bank">
+          <img src="img/center-tab-stop.svg" width="50" alt="A vector drawing of the symbol for a center aligned tab stop. It is two right angles sharing the vertical edge such that their other edges make a straight line across the bottom and a centered vertical line.">
+          <p>A center tab stop will center the text after the tab on the location of the tab stop.</p>
+        </li>
+        <li class="bank">
+          <img src="img/right-tab-stop.svg" width="50" alt="A vector drawing of the symbol for a right aligned tab stop. It is a right angle with one side pointing up and the other pointing left.">
+          <p>The right tab stop aligns the right edge of the text after the tab to the tab stop.</p>
+        </li>
+        <li class="bank">
+          <img src="img/decimal-tab-stop.svg" width="50" alt="A vector drawing of the symbol for a decimal tab stop. It is the same as the center tab stop with a decimal point on the right side of the vertical line.">
+          <p>The decimal tab stop is made for aligning numbers with a decimal point such that the decimal point is aligned with the tab stop.</p>
+        </li>
+        <li class="bank">
+          <img src="img/bar-tab-stop.svg" width="50" alt="A vector drawing of the symbol for a bar tab stop. It is simply a vertical line.">
+          <p>The bar tab stop inserts a visual vertical bar at the location of the tab stop. Because it isn't inline, it likely won't be read by a screen reader, so use this only when the visual information it adds is not necessary for comprehension.</p>
+        </li>
+      </ul>
+      <div class="vert-bank">
+        <div class="centered-image">
+          <a href="img/ex-left-ts.png"><img src="img/ex-left-ts.png" width="1110"></a>
+          <p>Figure 3: Left tab stop example</p>
+        </div>
+        <div class="centered-image">
+          <a href="img/ex-center-ts.png"><img src="img/ex-center-ts.png" width="1110"></a>
+          <p>Figure 4: Center tab stop example</p>
+        </div>
+        <div class="centered-image">
+          <a href="img/ex-right-ts.png"><img src="img/ex-right-ts.png" width="1110"></a>
+          <p>Figure 5: Right tab stop example</p>
+        </div>
+        <div class="centered-image">
+          <a href="img/ex-decimal-ts.png"><img src="img/ex-decimal-ts.png" width="1110"></a>
+          <p>Figure 6: Decimal tab stop example</p>
+        </div>
+        <div class="centered-image">
+          <a href="img/ex-bar-ts.png"><img src="img/ex-bar-ts.png" width="1110"></a>
+          <p>Figure 7: Bar tab stop example</p>
+        </div>
+      </div>
+
+      <h2>External resources</h2>
+      <ul>
+        <li><a href="https://support.microsoft.com/en-us/office/using-the-ruler-in-word-775014ca-7bb9-4b75-ba19-4478c4a836d1">Microsoft - Using the Ruler in Word</a></li>
+      </ul>
     </main>
   </body>
   <footer>
