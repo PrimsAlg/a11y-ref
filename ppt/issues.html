@@ -82,7 +82,18 @@
       </nav>
     </div>
     <main>
-      <p>Lorem Ipsum</p>
+      <h2>Reading order</h2>
+      <p>While there are a number of issues in PowerPoint, there is one that should be considered at all times, including in the process of fixing other issues. That issue is reading order, and it defines which elements will be read in what order by a screen reader. Each new element added to the slide is added to the reading order, and if it wasn't added to a content block, it will just be appended to the end of the order. Often, people will create diagrams with arrows and other shapes, and these will just be inserted using the Insert ribbon. This does nothing to convey the whole of the diagram to someone with a screen reader, and frequently will lead to a confusing reading experience, especially if the elements don't have alt text.</p>
+      <p>The reading order of a slide can be seen and modified using the Selection Pane, which can be found at the bottom of the Arrange dropdown menu in the Drawing section of the Home ribbon. Counterintuitively, a slide will read from the bottom of the Selection Pane to the top. A reading order issue arises when there are more elements in the selection pane than are expected. While theoretically there shouldn't be an issue as long as you ensure that the additional elements get read in the intended order, there can be instances where something exists on another layer that will not get read by a screen reader. Additionally, the presence of a reading order issue often is a symptom of another accessibility problem, like having arrows that convey relationships between text elements that won't be clear to a screen reader user. For these reasons, you should always try to remake your slide in such a way that each element has a dedicated content block. This will not only help resolve the reading order issue, but it will also encourage you to consider which parts of your slide can be combined into a single alt-textable element.</p>
+      <!-- TODO: add selection pane image -->
+
+      <h2>Missing and duplicate slide titles</h2>
+      <p>Slides need to have a title for the same reason that documents need headings: they are a navigation mechanism for people who use a screen reader. Because they serve as unique identifiers for the slides they belong to, there can't be any duplicates in the presentation. Ideally, each slide conveys a single idea, and that idea could be summed up by the title. In practice there are often multiple slides that cover a single topic. If possible, give these titles that are more descriptive about what information that slide contains. If it can't be broken down easily, or your goal is to keep as much of the initial document intact as possible, add a number to the end of each title to differentiate the slides.</p>
+      <p>If you need to have an untitled slide, whether because of a design decision or a need to preserve the original slides, you can add a title and position it outside of the bounds of the slide. This will ensure that the title still exists for screen readers, but it won't display as part of the presentation.</p>
+      
+      <h2>Unclear hyperlink text</h2>
+      <h2>Color contrast</h2>
+      <h2>Ensure captions for embedded content</h2>
     </main>
   </body>
   <footer>
