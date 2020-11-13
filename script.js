@@ -17,8 +17,38 @@ function getFileName() {
     return url;
 }
 
+// disables active dropdowns
+function clearActive() {
+    if (wordLinks.classList.contains('active')) {
+        wordLinks.classList.toggle('active')
+        wordButton.classList.toggle('active')
+    }
+    if (pptLinks.classList.contains('active')) {
+        pptLinks.classList.toggle('active')
+        pptButton.classList.toggle('active')
+    }
+    if (pdfLinks.classList.contains('active')) {
+        pdfLinks.classList.toggle('active')
+        pdfButton.classList.toggle('active')
+    }
+    if (videoLinks.classList.contains('active')) {
+        videoLinks.classList.toggle('active')
+        videoButton.classList.toggle('active')
+    }
+    if (otherLinks.classList.contains('active')) {
+        otherLinks.classList.toggle('active')
+        otherButton.classList.toggle('active')
+    }
+}
+
+// clears content dropdowns when window is resized
+$(window).resize(function() {
+    clearActive()
+})
+
 menuButton.addEventListener('click', () => {
     navbarLinks.classList.toggle('active')
+    clearActive() // clears content dropdowns when closed
 })
 wordButton.addEventListener('click', () => {
     if ($(window).width() < 800) {
