@@ -1,6 +1,6 @@
 # Accessibility Reference Site
 ## Viewing the site online
-The site is hosted with github pages, and can be accessed by going to [accessibilityref.info](accessibilityref.info).
+The site is hosted with github pages, and can be accessed by going to [accessibilityref.info](https://accessibilityref.info).
 ## How to view the site locally
 ### Downloading a .zip file
 The most basic way to view the site locally is to download the repository as a .zip file from the Code download dropdown. Unzip the folder, and open index.html in your browser. From there you can navigate like a regular website.  
