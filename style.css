@@ -184,7 +184,7 @@ footer {
  * full-size site
  * --------------------------- */
 
-@media (min-width: 1000px) {
+@media (min-width: 900px) {
     .top {
         margin-left: auto;
         margin-right: auto;
