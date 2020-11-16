@@ -81,20 +81,11 @@ h1 {
 /* menu button */
 
 .menu-button {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
     padding-right: 1em;
-    width: 40px;
-    height: 21px;
 }
 
-.menu-button .bar {
-    height: 3px;
-    width: 100%;
-    background-color: #fbf1c7;
-    color: #fbf1c7;
-    border-radius: 10px;
+.menu-button img {
+    width: 25px;
 }
 
 /* general navbar formatting */
