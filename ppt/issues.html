@@ -95,8 +95,21 @@
       <!-- TODO: add image -->
       
       <h2>Unclear hyperlink text</h2>
+      <p>Hyperlinks should be given a title that describes the link destination so that it's clear where the link leads. More information on hyperlinks can be found on the <a href="../other/hyperlinks.html">Hyperlinks</a> page.</p>
+
       <h2>Color contrast</h2>
+      <p>The color of your text should be distinct enough from the background for it to be easily read. As a general rule, light backgrounds should have dark text and vice versa, but more care should be taken to ensure there is sufficient contrast and that the colors are distinct for color blind individuals as well. You can check color contrast for any two colors with a <a href="https://contrastchecker.com">WCAG Contrast Checker</a>, and more information on color contrast can be found on the <a href="../other/color.html">Color</a> page.</p>
+
       <h2>Ensure captions for embedded content</h2>
+      <p>Embedded video and audio require captions and/or transcripts to ensure their content can be fully understood by someone with a hearing impairment. See the <a href="embed.html">Embedded Content</a> page for more information.</p>
+
+      <h2>Invisible issues</h2>
+      <p>PowerPoint's accessibility checker can't catch everything, so there are a few problems that can come up that can only be recognized through a manual check.</p>
+      <h3>Reading order</h3>
+      <p>Even though this is an error that appears frequently, it still doesn't recognize some types of reading order issues. The most common of these is when a content block wraps around another element. Often all of the text will be in one content block with images on top of it. Enters will be used in this case to space out the text to make room for the images or other elements. The issue with this is that PowerPoint still considers the text block to be one element, so all of the text will be read at once, and then the other content will be read. To make the slide read from top to bottom as intended, the text after the image needs to be in a separate content block that is ordered after the image in the selection pane.</p>
+      <!-- TODO: add images below and figure labels to text -->
+      <h3>Animations</h3>
+      <p>Animations can have a number of functions within a slide, from obscuring part of the slide temporarily to demonstrating a concept. Unfortunately, unless their use is relatively simple, animations can be quite problematic for accessibility and should generally be avoided. To learn more about why animations pose such issues and how to manage them, visit the <a href="animations.html">Animations</a> page.</p>
     </main>
   </body>
   <footer>
