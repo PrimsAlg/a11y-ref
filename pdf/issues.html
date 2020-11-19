@@ -81,7 +81,58 @@
       </nav>
     </div>
     <main>
-      <p>Lorem Ipsum</p>
+      <h2>Manual check issues</h2>
+      <p>There are a couple issues that aren't specific enough to give clear errors, and so require manual checks.</p>
+      <h3>Logical reading order</h3>
+      <p>This is likely the most important manual check issue. It's vital that the elements in the document get read in the correct order so that it makes sense to the reader. To check this, open the <a href="order.html">order pane</a> and scroll through the document, checking that the reading order of the numbers makes sense for the natural reading order of the document. Adjust the elements in the order pane as necessary to match the visual reading order. If content needs to be regrouped, open the reading order panel, either through the menu in the order pane or by right clicking any element in the order pane and selecting Show Reading Order Panel. This will allow you to select content by dragging a box around it. Selected content can be tagged as any of the listed options in the reading order panel.</p>
+      <h3>Color contrast</h3>
+      <p>Color contrast is equally as important to PDF accessibility as it is for other documents, but PDF provides less options to deal with such issues. As most PDFs are the usual black text on white background, this isn't frequently an issue, but it's important to take note of contrast issues If you see them, and remedy them through editing the document if possible.</p>
+      <h3>Navigation links</h3>
+      <p>When links are present, check the links to ensure that they work. Ideally, they should also be <a href="../other/hyperlinks.html">meaningful hyperlinks</a>, but if you are unable to edit them just make sure that the links actually direct to where they are intended to lead. If they don't work, you can remove the link content and just include the link in a normal paragraph tag.</p>
+
+      <h2>Document</h2>
+      <h3>Tagged PDF</h3>
+      <p>This issue simply says that the PDF is not structured with tags, and you need to run Make Accessible.</p>
+      <h3>Primary language</h3>
+      <p>There is not primary language set. Right click and choose Fix, then select the language that matches the document.</p>
+      <h3>Title</h3>
+      <p>There is no title set. Right click and choose Fix. If prompted, add a title that matches the title of the document or summarizes its content.</p>
+      <h3>Bookmarks</h3>
+      <p>No bookmarks exist for the document. Before fixing this, ensure there are no heading issues because the headings define the locations of the bookmarks. Once your headings are properly tagged, right click on the bookmarks issue and choose Fix. Choose the heading levels you would like to include as bookmarks; you can select multiple levels by holding Control and clicking.</p>
+
+      <h2>Page Content</h2>
+      <p>Most of these issues are fairly uncommon after running Make Accessible, but there are a few exceptions that can arise.</p>
+      <h3>Tab order</h3>
+      <p>This most often occurs when a PDF is already tagged, and Make Accessible is not run. Luckily, right clicking and choosing Fix is all that's necessary to resolve it.</p>
+      <h3>Character encoding</h3>
+      <p>Character encoding is an error that signifies that some symbols in the document have not been understood as text. To date, I've yet to see a general solution to these types of issues. If your document only has a few of these, they likely won't impact reading too much. If there are many issues, it can significantly affect the ability of screen readers to read the document aloud, and recreating the document may be the best way to remedy these issues.</p>
+
+      <h2>Alternate text</h2>
+      <p>Most of the alt text issues you'll run into are just adding alt text that's missing. Both Figures alternate text and Other elements alternate text can be resolved by right clicking them, choosing fix, and writing the alt text.</p>
+      <h3>Nested alternate text</h3>
+      <p>This refers to two elements that each have alternate text where one is nested within the other. First, verify that the tag structure causing this problem is the proper structure for the document, as this may be an issue with malformed tags. Assuming an accurate tag structure, remove the alt text from the tag that seems least likely to have alt text. (e.g. if a figure tag is in a sect tag and both have alt text, remove the alt text from the sect tag)</p>
+
+      <h2>Tables</h2>
+      <!-- TODO: add description of proper table structure -->
+      <h3>Rows</h3>
+      <p>Table row (TR) tags must be a child of a Table tag. This error occurs when a TR tag is misplaced. Right click on the error and choose Show in Tags Panel. Look at the structure around the TR tag and ensure that it belongs to a Table. Sometimes this occurs because another tag gets inserted as a child of the Table, and it has the TR as its child. In this case, move the TR tag up one level to be a child of the Table tag and delete the empty extra tag.</p>
+      <h3>TH and TD</h3>
+      <p>This error is the same type of error as the Rows error, where table header cells (TH) and table data cells (TD) must be children of TR. It is resolved in the same manner, by ensuring that the proper table structure is followed.</p>
+      <h3>Headers</h3>
+      <p>All tables in PDF should have a header row or column that describes the content in the rest of the table. If a headers issue exists, it means all of the cells in the table are tagged as TD cells. In the tags panel, select the tags that should be a part of the header, and change their tag to be TH.</p>
+      <h3>Regularity</h3>
+      <p>Regularity refers to there being an equal amount of columns present across the rows. In normal tables with no merged cells, this issue might be caused by blank cells not having a tag representing them. In this case, right click a tag for a cell in the row you would like to add to and choose New Tag. In the dialog, choose the appropriate cell type, and hit OK. Then, if necessary, move the tag to the appropriate location in the table. In more complex tables that have merged cells, you can change the cells' column and row span using the <a href="table-editor.html">table editor</a>.</p>
+
+      <h2>Lists</h2>
+      <p>List errors are similar to the first two table errors in how they are based on a strict tag structure.</p>
+      <h3>List items</h3>
+      <p>List items (LI) must be a child of a List tag. Right click the error to Show in Tags Panel, and then ensure that the List tag contains only LI tags and that all LI tags are nested within a List.</p>
+      <h3>Lbl and LBody</h3>
+      <p>List item labels (Lbl) and List item bodys (LBody) must be children of an LI tag. Right click the error to Show in Tags Panel, and then ensure that the LI tag contains only Lbl and LBody tags and that all Lbl and LBody tags are nested within an LI tag.</p>
+
+      <h2>Headings</h2>
+      <h3>Appropriate nesting</h3>
+      <p>Headings need to be structured like an outline, where they incrementally become more focused and divide the document into sections. The document should have a single H1, and from there should not skip heading levels when ascending, so an H3 needs to be after an H2. However, after an H2, there can be any number of smaller headings. So H1 H2 H3 H4 H3 H3 H4 H2 would be a valid heading structure. For more information, see the <a href="../other/headings.html">Headings</a> page.</p>
     </main>
   </body>
   <footer>
