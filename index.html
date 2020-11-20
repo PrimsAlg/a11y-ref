@@ -11,6 +11,7 @@
     <div class="top">
       <header>
         <h1>Accessibility Overview</h1>
+        <a href="#first" class="skip-nav">skip nav</a>
         <a href="#" class="menu-button">
           <img src="img/menu.svg" alt="menu button">
         </a>
@@ -25,7 +26,6 @@
                 <a href="word/word.html">Word homepage</a>
                 <a href="word/issues.html">Common issues</a>
                 <a href="word/formatting.html">Formatting tools</a>
-                <a href="word/images.html">Handling images</a>
                 <a href="word/tables.html">Table structure</a>
                 <a href="word/styles.html">Styles and headings</a>
               </div>
@@ -81,13 +81,16 @@
       </nav>
     </div>
     <main>
-      <p>The goal of remediating documents for accessibility is to augment and organize the existing content in a way that makes the information available to a greater set of students. This might include adding alternate text to images so that someone using a screen reader can understand the images' content, adding captions and transcripts to videos, or restructuring tables so they more clearly convey their information. This position deals primarily with accessibility in Word, PowerPoint, PDF, and videos. In Word and PDF, we ensure the document is organized by headers, add alt text, and reformat pages that can be better structured. In PowerPoint, we make sure each slide element is inserted into a content block and that the slide reads in the correct order. For video, we provide captions and transcripts and occasionally write descriptions of on-screen content. Of course, each of these files has much more that goes into making it accessible, but each is guided by the goal of preserving as much of the original file in an accessible medium as possible.</p>
+      <p id="first">The goal of remediating documents for accessibility is to augment and organize the existing content in a way that makes the information available to a greater set of students. This might include adding alternate text to images so that someone using a screen reader can understand the images' content, adding captions and transcripts to videos, or restructuring tables so they more clearly convey their information. This position deals primarily with accessibility in Word, PowerPoint, PDF, and videos. In Word and PDF, we ensure the document is organized by headers, add alt text, and reformat pages that can be better structured. In PowerPoint, we make sure each slide element is inserted into a content block and that the slide reads in the correct order. For video, we provide captions and transcripts and occasionally write descriptions of on-screen content. Of course, each of these files has much more that goes into making it accessible, but each is guided by the goal of preserving as much of the original file in an accessible medium as possible.</p>
       <p>Oftentimes, people don't consider accessibility as they create their documents, and the software they use may encourage the use of inaccessible formatting. As such, they may use the tools present in programs like Word and PowerPoint in inaccessible manners. In remediating these documents, we replace the inaccessible processes using other tools built into these programs that preserve an accessible form. A common example of this appears in syllabi. A syllabus will commonly have a table at the top that contains instructor information. Often, a table is used because it looks cleaner to have the labels right aligned next to their associated information. These tables will rarely have a header row, which makes the semantic structure of the table ambiguous to a screen reader user. This way of visually organizing the information creates unnecessary verbosity when ready by a screen reader, and makes it generally more difficult to understand to those who use them. The solution to this is to replace the table with tab stops. A right-aligned tab stop can preserve the same visual style, while being much clearer when read aloud.</p>
       <p>While much of our work revolves around accessibility for people with visual or auditory impairments, it's important to remember that accessibility is a much larger field than just making sure documents can be read. Our perspective is that of ensuring the accessibility of course documents, but accessibility more generally is ensuring that everyone has equal access to services, in this case learning. That may be affected by someone's physical or mental differences, or even more external factors like socioeconomic status. The ethos of equality that underlies the need for accessibility applies to all of these factors, so the work we do is just one small part of that larger pursuit. Because of these equality-based goals, the principles that guide accessible design benefit everyone. For written content, they ensure that a document's semantic information is conveyed effectively by its structure. Also, captions make videos easier to understand for people who learn better by reading or assist people who have a hearing impairment or who might be in louder environments.</p>
     </main>
   </body>
+  <hr>
   <footer>
-    <hr>
-    <p>&#169; 2020</p>
+    <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">
+      <img src="img/cc-by-nc-sa.svg" alt="Creative Commons License, Attribution, Non Commercial, Share Alike">
+    </a>
+    <p>Created by Alana Gomoll, 2020</p>
   </footer>
 </html>

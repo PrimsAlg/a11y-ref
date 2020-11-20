@@ -44,10 +44,19 @@ main a:visited, aside a:visited {
     color: #9dce4d;
 }
 
+hr {
+    margin-left: auto;
+    margin-right: auto;
+    width: 75%;
+}
+
 h2, h3 {
     color: #fbf1c7;
-    margin-top: 1.25em;
     text-align: center;
+}
+
+h3 {
+    margin-top: 1.25em;
 }
 
 h4 {
@@ -76,6 +85,16 @@ h1 {
     margin: 0;
     padding: 0.3em 0.5em;
     text-align: center;
+}
+
+.skip-nav {
+    color: #554966;
+    text-align: center;
+    text-decoration: none;
+}
+
+.skip-nav:hover {
+    text-decoration: underline;
 }
 
 /* menu button */
@@ -161,14 +180,58 @@ h1 {
     background-color: #554966;
 }
 
+/* anchor navigation */
+
+.anchors {
+    margin-left: auto;
+    margin-right: auto;
+    width: 85%
+}
+
+.anchors ul {
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    list-style-type: none;
+}
+
+.anchors li {
+    padding: 0.25em 0.5em;
+}
+
+.anchors a {
+    color: #88d0c6;
+    text-decoration: none;
+}
+
+.anchors a:hover {
+    text-decoration: underline;
+}
+
 /* ---------------------------
  * footer
  * --------------------------- */
-footer {
+
+hr.footer {
     margin-left: auto;
     margin-right: auto;
-    padding-top: 0.75em;
     width: 85%;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    padding-top: 0.75em;
+}
+
+footer a {
+    padding-right: 1em;
+}
+
+footer p {
+    padding-left: 1em;
 }
 
 /* ---------------------------
@@ -193,7 +256,17 @@ footer {
     }
 
     header {
-        display: block;
+        display: flex;
+        flex-direction: column;
+    }
+
+    h1 {
+        vertical-align: middle;
+        padding: 0.3em 0.5em 0em;
+    }
+
+    .skip-nav {
+        float: right;
     }
 
     .navbar-links {

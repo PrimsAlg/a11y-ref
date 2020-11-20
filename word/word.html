@@ -11,6 +11,7 @@
     <div class="top">
       <header>
         <h1>Microsoft Word</h1>
+        <a href="#first" class="skip-nav">skip nav</a>
         <a href="#" class="menu-button">
           <img src="../img/menu.svg" alt="menu button">
         </a>
@@ -25,7 +26,6 @@
                 <a href="../word/word.html">Word homepage</a>
                 <a href="../word/issues.html">Common issues</a>
                 <a href="../word/formatting.html">Formatting tools</a>
-                <a href="../word/images.html">Handling images</a>
                 <a href="../word/tables.html">Table structure</a>
                 <a href="../word/styles.html">Styles and headings</a>
               </div>
@@ -81,7 +81,7 @@
       </nav>
     </div>
     <main>
-      <h2>Accessibility in Word</h2>
+      <h2 id="first">Accessibility in Word</h2>
       <p>To start checking accessibility in Word, go to File &gt; Info &gt; Check for Issues &gt; Check Accessibility. This will open the Accessibility pane, which will display all of the issues in the file. If you click on an issue to select it, it will take you to the place in the document where the issue occurs, and will display a reason and potential fix for the issue in the Accessibility pane. A list of common issues and how to fix them can be found on the <a href="issues.html">Common Issues</a> page. The issues in Word are fairly discrete and don't often affect each other, so the workflow for which issues you work on first is mostly up to you.</p>
       <p>Most issues in Word are relatively straightforward, but some elements need to be managed in more specific ways. <a href="images.html">Handling Images</a> discusses how to make images accessible; <a href="tables.html">Table Structure</a> explains how tables should be created, and how to fix irregular tables; and <a href="styles.html">Styles and Headings</a> details how to structure a document with headings and how to modify their visual style.</p>
       <p>The <a href="formatting.html">Formatting tools</a> page shows how to use a variety of options in Word to remedy issues caused by poor formatting.</p>
@@ -93,8 +93,11 @@
       </ul>
     </main>
   </body>
+  <hr>
   <footer>
-    <hr>
-    <p>&#169; 2020</p>
+    <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">
+      <img src="../img/cc-by-nc-sa.svg" alt="Creative Commons License, Attribution, Non Commercial, Share Alike">
+    </a>
+    <p>Created by Alana Gomoll, 2020</p>
   </footer>
 </html>

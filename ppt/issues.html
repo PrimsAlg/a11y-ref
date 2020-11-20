@@ -11,6 +11,7 @@
     <div class="top">
       <header>
         <h1>Common Issues</h1>
+        <a href="#first" class="skip-nav">skip nav</a>
         <a href="#" class="menu-button">
           <img src="../img/menu.svg" alt="menu button">
         </a>
@@ -25,7 +26,6 @@
                 <a href="../word/word.html">Word homepage</a>
                 <a href="../word/issues.html">Common issues</a>
                 <a href="../word/formatting.html">Formatting tools</a>
-                <a href="../word/images.html">Handling images</a>
                 <a href="../word/tables.html">Table structure</a>
                 <a href="../word/styles.html">Styles and headings</a>
               </div>
@@ -81,7 +81,7 @@
       </nav>
     </div>
     <main>
-      <h2>Reading order</h2>
+      <h2 id="first">Reading order</h2>
       <p>While there are a number of issues in PowerPoint, there is one that should be considered at all times, including in the process of fixing other issues. That issue is reading order, and it defines which elements will be read in what order by a screen reader. Each new element added to the slide is added to the reading order, and if it wasn't added to a content block, it will just be appended to the end of the order. Often, people will create diagrams with arrows and other shapes, and these will just be inserted using the Insert ribbon. This does nothing to convey the whole of the diagram to someone with a screen reader, and frequently will lead to a confusing reading experience, especially if the elements don't have alt text.</p>
       <p>The reading order of a slide can be seen and modified using the Selection Pane, which can be found at the bottom of the Arrange dropdown menu in the Drawing section of the Home ribbon. Counterintuitively, a slide will read from the bottom of the Selection Pane to the top. A reading order issue arises when there are more elements in the selection pane than are expected. While theoretically there shouldn't be an issue as long as you ensure that the additional elements get read in the intended order, there can be instances where something exists on another layer that will not get read by a screen reader. Additionally, the presence of a reading order issue often is a symptom of another accessibility problem, like having arrows that convey relationships between text elements that won't be clear to a screen reader user. For these reasons, you should always try to remake your slide in such a way that each element has a dedicated content block. This will not only help resolve the reading order issue, but it will also encourage you to consider which parts of your slide can be combined into a single alt-textable element.</p>
       <!-- TODO: add selection pane image -->
@@ -112,7 +112,11 @@
       <p>Animations can have a number of functions within a slide, from obscuring part of the slide temporarily to demonstrating a concept. Unfortunately, unless their use is relatively simple, animations can be quite problematic for accessibility and should generally be avoided. To learn more about why animations pose such issues and how to manage them, visit the <a href="animations.html">Animations</a> page.</p>
     </main>
   </body>
+  <hr>
   <footer>
-    <p>footer</p>
+    <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">
+      <img src="../img/cc-by-nc-sa.svg" alt="Creative Commons License, Attribution, Non Commercial, Share Alike">
+    </a>
+    <p>Created by Alana Gomoll, 2020</p>
   </footer>
 </html>

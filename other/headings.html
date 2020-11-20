@@ -11,6 +11,7 @@
     <div class="top">
       <header>
         <h1>Headings</h1>
+        <a href="#first" class="skip-nav">skip nav</a>
         <a href="#" class="menu-button">
           <img src="../img/menu.svg" alt="menu button">
         </a>
@@ -25,7 +26,6 @@
                 <a href="../word/word.html">Word homepage</a>
                 <a href="../word/issues.html">Common issues</a>
                 <a href="../word/formatting.html">Formatting tools</a>
-                <a href="../word/images.html">Handling images</a>
                 <a href="../word/tables.html">Table structure</a>
                 <a href="../word/styles.html">Styles and headings</a>
               </div>
@@ -81,14 +81,18 @@
       </nav>
     </div>
     <main>
-      <h2>Document structure</h2>
+      <h2 id="first">Document structure</h2>
       <p>Headings serve the purpose of providing structure to a document. They allow people with screen readers to jump from heading to heading as a navigation tool, as well as just adding a visual organization for sighted readers.</p>
       <h3>Heading order</h3>
       <p>Headings define a hierarchical structure, and so their order matters. They are frequently described by number so the first heading level would be labeled h1, and so on. The top level heading of a document is h1, and there should only be one per document. Normally this is the document title. Beneath that, headings can be conceptualized as a sort of outline, where each h2 represents the largest organizational blocks, and those are split further into h3 and so on. Because of this type of structure, headings should never skip a level, so an h5 must be within an h4, which must be within an h3, etc. However, headings may jump back to a larger level, like an h2 coming after an h5. This is allowed because it's considered the end of the previous h2 block, which contains everything up to and including the h5. An example of how an academic paper might be structured with headings is given below.</p>
       <!-- TODO: add example with indentation -->
     </main>
   </body>
+  <hr>
   <footer>
-    <p>footer</p>
+    <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">
+      <img src="../img/cc-by-nc-sa.svg" alt="Creative Commons License, Attribution, Non Commercial, Share Alike">
+    </a>
+    <p>Created by Alana Gomoll, 2020</p>
   </footer>
 </html>

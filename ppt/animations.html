@@ -11,6 +11,7 @@
     <div class="top">
       <header>
         <h1>Animations</h1>
+        <a href="#first" class="skip-nav">skip nav</a>
         <a href="#" class="menu-button">
           <img src="../img/menu.svg" alt="menu button">
         </a>
@@ -25,7 +26,6 @@
                 <a href="../word/word.html">Word homepage</a>
                 <a href="../word/issues.html">Common issues</a>
                 <a href="../word/formatting.html">Formatting tools</a>
-                <a href="../word/images.html">Handling images</a>
                 <a href="../word/tables.html">Table structure</a>
                 <a href="../word/styles.html">Styles and headings</a>
               </div>
@@ -81,7 +81,7 @@
       </nav>
     </div>
     <main>
-      <h2>Problems with animations</h2>
+      <h2 id="first">Problems with animations</h2>
       <p>Unlike transitions, which happen between slides and carry no instructional information, animations happen within a single slide and may potentially convey information visually. This becomes an issue when that information doesn't have another method of being conveyed within the PowerPoint. While animations are useful at visually illustrating ideas in a presentation setting, they don't translate to the experience of reading a slideshow with a screen reader.</p>
       <p>Beyond the issues with information accessibility, animations also pose issues related to the slide structure. Often, animations are made up of many slide elements that may or may not be visible at different moments in time. If these aren't properly inserted into the slide, reading order issues will cause the slide to be extremely confusing when read aloud. Many times, even if they are properly inserted, there are still redundancies and irrelevant elements that would have to be read. On top of that, even if each element is alt texted properly as well, the elements alone can't convey the overall goal of the slide's visuals.</p>
 
@@ -90,7 +90,11 @@
       <p>The first thing that needs to be considered is what the animation is conveying. Some animations are just having content appear at different times and don't have any informational value. As long as these don't unnecessarily complicate the reading order with extra elements, they can often be left as is. The process becomes more difficult when the animations carry informational content because not only does that information need to be preserved visually, but also conveyed to screen reader users. Animations are a fairly case by case type of issue, and there are a lot of considerations in how they are handled. As such, a few examples are given to demonstrate different ways of dealing with animations and what to consider when doing so.</p>
     </main>
   </body>
+  <hr>
   <footer>
-    <p>footer</p>
+    <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">
+      <img src="../img/cc-by-nc-sa.svg" alt="Creative Commons License, Attribution, Non Commercial, Share Alike">
+    </a>
+    <p>Created by Alana Gomoll, 2020</p>
   </footer>
 </html>
