@@ -80,30 +80,47 @@
         </div>
       </nav>
     </div>
-    <main>
-      <h2 id="first">Reading order</h2>
+    <div class="anchors">
+      <ul>
+        <li><a href="#order">Check reading order</a></li>
+        <li><a href="#titles">Missing and duplicate slide titles</a></li>
+        <li><a href="#section">Default section name</a></li>
+        <li><a href="#hyperlink">Unclear hyperlink text</a></li>
+        <li><a href="#contrast">Hard to read text contrast</a></li>
+        <li><a href="#captions">Use captions for audio and video</a></li>
+        <li><a href="#invisible">Invisible issues</a></li>
+      </ul>
+    </div>
+    <main id="first">
+      <h2 id="order">Check reading order</h2>
       <p>While there are a number of issues in PowerPoint, there is one that should be considered at all times, including in the process of fixing other issues. That issue is reading order, and it defines which elements will be read in what order by a screen reader. Each new element added to the slide is added to the reading order, and if it wasn't added to a content block, it will just be appended to the end of the order. Often, people will create diagrams with arrows and other shapes, and these will just be inserted using the Insert ribbon. This does nothing to convey the whole of the diagram to someone with a screen reader, and frequently will lead to a confusing reading experience, especially if the elements don't have alt text.</p>
       <p>The reading order of a slide can be seen and modified using the Selection Pane, which can be found at the bottom of the Arrange dropdown menu in the Drawing section of the Home ribbon. Counterintuitively, a slide will read from the bottom of the Selection Pane to the top. A reading order issue arises when there are more elements in the selection pane than are expected. While theoretically there shouldn't be an issue as long as you ensure that the additional elements get read in the intended order, there can be instances where something exists on another layer that will not get read by a screen reader. Additionally, the presence of a reading order issue often is a symptom of another accessibility problem, like having arrows that convey relationships between text elements that won't be clear to a screen reader user. For these reasons, you should always try to remake your slide in such a way that each element has a dedicated content block. This will not only help resolve the reading order issue, but it will also encourage you to consider which parts of your slide can be combined into a single alt-textable element.</p>
       <!-- TODO: add selection pane image -->
+      <hr>
 
-      <h2>Missing and duplicate slide titles</h2>
+      <h2 id="titles">Missing and duplicate slide titles</h2>
       <p>Slides need to have a title for the same reason that documents need headings: they are a navigation mechanism for people who use a screen reader. Because they serve as unique identifiers for the slides they belong to, there can't be any duplicates in the presentation. Ideally, each slide conveys a single idea, and that idea could be summed up by the title. In practice there are often multiple slides that cover a single topic. If possible, give these titles that are more descriptive about what information that slide contains. If it can't be broken down easily, or your goal is to keep as much of the initial document intact as possible, add a number to the end of each title to differentiate the slides.</p>
       <p>If you need to have an untitled slide, whether because of a design decision or a need to preserve the original slides, you can add a title and position it outside of the bounds of the slide. This will ensure that the title still exists for screen readers, but it won't display as part of the presentation.</p>
+      <hr>
 
-      <h2>Default section name</h2>
+      <h2 id="section">Default section name</h2>
       <p>A similar navigational tool are sections. You can define sections in a PowerPoint by right clicking a slide and selecting Add Section. It's important that the section doesn't keep its default name, as the name should describe the content within the section so that it can be used for navigation. To rename the section, right click on the section name and choose Rename Section.</p>
       <!-- TODO: add image -->
+      <hr>
       
-      <h2>Unclear hyperlink text</h2>
+      <h2 id="hyperlink">Unclear hyperlink text</h2>
       <p>Hyperlinks should be given a title that describes the link destination so that it's clear where the link leads. More information on hyperlinks can be found on the <a href="../other/hyperlinks.html">Hyperlinks</a> page.</p>
+      <hr>
 
-      <h2>Color contrast</h2>
+      <h2 id="contrast">Hard to read text contrast</h2>
       <p>The color of your text should be distinct enough from the background for it to be easily read. As a general rule, light backgrounds should have dark text and vice versa, but more care should be taken to ensure there is sufficient contrast and that the colors are distinct for color blind individuals as well. You can check color contrast for any two colors with a <a href="https://contrastchecker.com">WCAG Contrast Checker</a>, and more information on color contrast can be found on the <a href="../other/color.html">Color</a> page.</p>
+      <hr>
 
-      <h2>Ensure captions for embedded content</h2>
+      <h2 id="captions">Use captions for audio and video</h2>
       <p>Embedded video and audio require captions and/or transcripts to ensure their content can be fully understood by someone with a hearing impairment. See the <a href="embed.html">Embedded Content</a> page for more information.</p>
+      <hr>
 
-      <h2>Invisible issues</h2>
+      <h2 id="invisible">Invisible issues</h2>
       <p>PowerPoint's accessibility checker can't catch everything, so there are a few problems that can come up that can only be recognized through a manual check.</p>
       <h3>Reading order</h3>
       <p>Even though this is an error that appears frequently, it still doesn't recognize some types of reading order issues. The most common of these is when a content block wraps around another element. Often all of the text will be in one content block with images on top of it. Enters will be used in this case to space out the text to make room for the images or other elements. The issue with this is that PowerPoint still considers the text block to be one element, so all of the text will be read at once, and then the other content will be read. To make the slide read from top to bottom as intended, the text after the image needs to be in a separate content block that is ordered after the image in the selection pane.</p>
