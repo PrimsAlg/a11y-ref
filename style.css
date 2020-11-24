@@ -12,28 +12,27 @@ body {
  * main
  * --------------------------- */
 
-main p, main ul, aside ul {
-    font-size: larger;
+main p, main ul, aside ul, main ol {
+    font-size: large;
     line-height: 1.25em;
     margin-left: auto;
     margin-right: auto;
     width: 90%;
 }
 
-ol {
-    color: #fbf1c7;
-    margin-left: auto;
-    margin-right: auto;
-    width: 90%;
-}
-
 ol h4 {
+    color: #fbf1c7;
     margin-bottom: 0.5em;
 }
 
 ol p {
     color: #fbf8e8;
     margin: 0;
+}
+
+ol ol {
+    list-style-type: lower-roman;
+    margin: 0.5em 0;
 }
 
 main a, aside a {
