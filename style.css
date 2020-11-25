@@ -62,6 +62,28 @@ h4 {
     color: #fbf1c7;
 }
 
+.bank {
+    display: flex;
+    align-items: center;
+    padding-left: 4rem;
+}
+
+.image {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 1rem;
+}
+
+.bank p {
+    font-size: 1em;
+    margin: 0;
+}
+
+.bank > p {
+    margin-left: 0.5em;
+}
+
 /* ---------------------------
  * header and nav
  * --------------------------- */
