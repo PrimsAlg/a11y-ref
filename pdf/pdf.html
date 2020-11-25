@@ -4,6 +4,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>PDF</title>
     <link rel="stylesheet" type="text/css" href="../style.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="../script.js" defer></script>
   </head>
@@ -83,26 +84,104 @@
     <main>
       <h2 id="first">How PDF is stuctured</h2>
       <p>PDFs are structured primarily with tags. Tags are containers for all of the content within the PDF that describes what type of content it is. For example, a paragraph is denoted by a &lt;p&gt; tag, and a second level heading is an &lt;h2&gt; tag. These are extremely similar to the tags that make up HTML.</p>
+      <hr>
+
+      <h2>Preparing Acrobat DC for working with accessibility</h2>
+      <h3>Accessing tools</h3>
+      <p>There are two tools that are used for accessibility that are available in the Tools section of Acrobat DC (Figure 1). These are the Accessibility tool (Figure 2) and the Action Wizard (Figure 3). You can either run them from the Tools menu or click the Add button to access them from the Tools sidebar (Figure 4).</p>
+      <div class="bank">
+        <div class="image">
+          <img src="img/tools-location.png" height="150" alt="The location of the Tools menu, to the right of the Home screen and to the left of the open documents.">
+          <p>Fig. 1</p>
+        </div>
+        <div class="image">
+          <img src="img/accessibility.png" height="150" alt="The Accessibility tool">
+          <p>Fig. 2</p>
+        </div>
+        <div class="image">
+          <img src="img/action-wizard.png" height="150" alt="The Action Wizard tool">
+          <p>Fig. 3</p>
+        </div>
+        <div class="image">
+          <img src="img/tools-bar.png" height="150" alt="The tools sidebar containing the Accessibility and Action Wizard tools">
+          <p>Fig. 4</p>
+        </div>
+      </div>
+      <h3>Accessing sidebar items</h3>
+      <p>There are three main panels that are used in making PDFs accessible. These are the <a href="tags.html">tags panel</a> (Figure 5), <a href="order.html">order panel</a> (Figure 6), and the <a href="content.html">content panel</a> (Figure 7). The tags panel is the primary source of document structure, and lets you make structural changes in the document. It's used primarily to fix tables and lists, ensure proper heading levels, and reorder some elements for reading. The order panel is a sort of interface to the tags panel. It's useful for checking and resolving reading order, changing what elements are part of what tags, and backgrounding unnecessarily tagged content. The content panel is not used often, but it contains all of the recognized content in the PDF. It may be needed if you need more control over what is in which tags.</p>
+      <div class="bank">
+        <div class="image">
+          <img src="img/tags.svg" height="75" alt="the tags panel icon">
+          <p>Fig. 5</p>
+        </div>
+        <div class="image">
+          <img src="img/order.svg" height="75" alt="the order panel icon">
+          <p>Fig. 6</p>
+        </div>
+        <div class="image">
+          <img src="img/content.svg" height="75" alt="the content panel icon">
+          <p>Fig. 7</p>
+        </div>
+        <div class="image">
+        </div>
+      </div>
+      <p>These panels can be accessed from the left sidebar. If they are not shown, right clicking on the left sidebar will display a menu that will allow you to add panels to the sidebar (Figure 8).</p>
+      <div class="bank">
+        <div class="image">
+          <img src="img/sidebar-items.png" width="250" alt="the menu displaying the different panels that can be added to the sidebar">
+          <p>Fig. 8</p>
+        </div>
+      </div>
+      <hr>
+
       <h2>Accessibility in PDF</h2>
-      <p>Checking accessibility in PDF is more removed from the editing process than in Word and PowerPoint. Accessibility in PDF revolves around tags, which are labels for the content in the document that define the document's structure.</p>
         <ol>
-          <li>Run the accessibility check from the Tools &gt; Accessibility menu and hit "Start Checking".</li>
+          <li>
+            <p>Run the accessibility check from the Tools &gt; Accessibility menu and hit "Start Checking".</p>
+            <img src="img/accessibility-check.png" width="250" alt="the accessibility check option highlighted in the accessibility tool">
+          </li>
           <li>
             <p>If the accessibility check throws an error in the Document category for "Tagged PDF", the PDF needs to be tagged with the Make Accessible tool. That can be found in the Tools &gt; Action Wizard menu.</p>
+            <img src="img/make-accessible.png" width="250" alt="the Make Accessible option highlighted in the accessibility tool">
             <ol>
-              <li>Select Make Accessible and hit "Start".</li>
-              <li>A Description dialog will open that allows you to add metadata. Most of it is optional, but you should make sure that there is a readable title for the document entered; often it's good to use the heading 1 of the document as the title. (For more information on headings see the <a href="../other/headings.html">Headings</a> page.)</li>
-              <li>Next, the OCR will run to recognize text in the document; you likely don't need to change anything here unless the document language is not English.</li>
-              <li>After that dialog, you are presented with the option to detect form fields. You should only choose "Yes" if the document is a form. Otherwise, choose "No, Skip this Step".</li>
-              <li>The last dialog is to set the reading language, which should match the document language.</li>
-              <li>The final step in the wizard is setting alternate text for all of the images that are tagged. I suggest that you just choose "Save and Close" at this point and come back to the alt text once you have taken care of the other issues.</li>
-              <li>You will be presented with the Accessibility Checker again, so just choose "Start Checking".</li>
+              <li>
+                <p>Select Make Accessible and hit "Start".</p>
+                <img src="img/make-accessible-start.png" width="250" alt="the Make Accessible start button">
+              </li>
+              <li>
+                <p>A Description dialog will open that allows you to add metadata. Most of it is optional, but you should make sure that there is a readable title for the document entered; often it's good to use the heading 1 of the document as the title. (For more information on headings see the <a href="../other/headings.html">Headings</a> page.)</p>
+                <img src="img/title.png" width="250" alt="the description dialog box with the title of the document added to the title field">
+              </li>
+              <li>
+                <p>Next, the OCR will run to recognize text in the document; you likely don't need to change anything here unless the document language is not English.</p>
+                <img src="img/ocr.png" width="250" alt="the recognize text dialog with English selected as the document language">
+              </li>
+              <li>
+                <p>After that dialog, you are presented with the option to detect form fields. You should only choose "Yes" if the document is a form. Otherwise, choose "No, Skip this Step".</p>
+                <img src="img/form-fields.png" width="250" alt="the detect form fields dialog with the No, Skip this Step option highlighted">
+              </li>
+              <li>
+                <p>The last dialog is to set the reading language, which should match the document language.</p>
+                <img src="img/reading-language.png" width="250" alt="the reading language dialog with English selected">
+              </li>
+              <li>
+                <p>The final step in the wizard is setting alternate text for all of the images that are tagged. I suggest that you just choose "Save and Close" at this point and come back to the alt text once you have taken care of the other issues.</p>
+                <img src="img/alt-text.png" width="250" alt="the set alternate text dialog">
+              </li>
+              <li>
+                <p>You will be presented with the Accessibility Checker again, so just choose "Start Checking".</p>
+                <img src="img/accessibility-checker.png" width="250" alt="the accessibility checker options dialog">
+              </li>
             </ol>
           </li>
-          <li>Any issues will be displayed in the left side Accessibility Checker pane. Descriptions of many of these issues are on the <a href="issues.html">Common Issues</a> page, but you can also right click an error and choose "Explain". This will open up Adobe's help page to that issue, which will give a reason for the issue and a potential fix.</li>
+          <li>
+            <p>Any issues will be displayed in the left side Accessibility Checker pane. Descriptions of many of these issues are on the <a href="issues.html">Common Issues</a> page, but you can also right click an error and choose "Explain". This will open up Adobe's help page to that issue, which will give a reason for the issue and a potential fix.</p>
+            <img src="img/accessibility-check.png" width="250" alt="the completed accessibility check, showing four issues">
+          </li>
         </ol>
-      <p>There are three main tool panels that are used in making PDFs accessible. These are the <a href="tags.html">tags panel</a>, <a href="order.html">order panel</a>, and the <a href="content.html">content panel</a>. The tags panel is the primary source of document structure, and lets you make structural changes in the document. It's used primarily to fix tables and lists, ensure proper heading levels, and reorder some elements for reading. The order panel is a sort of interface to the tags panel. It's useful for checking and resolving reading order, changing what elements are part of what tags, and backgrounding unnecessarily tagged content. The content panel is not used often, but it contains all of the recognized content in the PDF. It may be needed if you need more control over what is in which tags.</p>
       <p>Another useful utility is the table editor. This helps in ensuring that the tagged representation of the table aligns with the visual representation. It allows you to change cells between header and data cells, as well as define column and row span for cells. This is especially useful when dealing with nested header rows, where one row may have merged cells that span multiple columns. The table editor lets you describe to Acrobat the size of these cells so that they properly apply to the columns.</p>
+      <hr>
+
       <h2>Tips for working in PDF</h2>
       <ul>
         <li>Always run the accessibility checker first before running Make Accessible. For most documents, it won't matter, which makes it tempting to just skip to Make Accessible. However, the times where the document is already tagged, it's likely that running Make Accessible instead of working from the existing structure will create more issues than you might have otherwise.</li>
