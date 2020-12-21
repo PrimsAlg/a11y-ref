@@ -89,8 +89,55 @@
       <p>Because of the above issues, animations that convey information should generally be avoided when creating a slide show. However, you may be trying to create an accessible version of an existing document, so the rest of this page will discuss how to consider accessibility when working with animations.</p>
       <p>The first thing that needs to be considered is what the animation is conveying. Some animations are just having content appear at different times and don't have any informational value. As long as these don't unnecessarily complicate the reading order with extra elements, they can often be left as is. The process becomes more difficult when the animations carry informational content because not only does that information need to be preserved visually, but also conveyed to screen reader users. Animations are a fairly case by case type of issue, and there are a lot of considerations in how they are handled. As such, a few examples are given to demonstrate different ways of dealing with animations and what to consider when doing so.</p>
       <h3>Minimize unnecessary elements</h3>
-      <p>This is an example of a graph being revealed gradually in such a way that an instructor might use to delay showing the later parts of the graph as the earlier parts are discussed. The initial version has three rectangles that cover the graph that each have a fly out exit animation.</p>
+      <p>While newer versions of PowerPoint allow for marking an image as decorative, this is not a surefire way to ensure an element doesn't get read. Because of this, you should always strive to have as few elements as possible.</p>
+      <p>In this example, a graph is being revealed gradually in such a way that an instructor might use to delay showing the later parts of the graph as the earlier parts are discussed. The initial version has three rectangles that cover the graph that each have a fly out exit animation. These extra elements may get read aloud, adding unnecessary difficulty to understanding the slide.</p>
+      <div class="bank">
+        <div class="image">
+          <img src="img/graph-initial.gif" alt="animation of a graph being revealed in three parts" height="300px">
+          <p>Fig. 1</p>
+        </div>
+        <div class="image">
+          <img src="img/initial-anim-pane.png" alt="The animation pane for the animation, showing three rectangles with fly out animations" width="303px">
+          <p>Fig. 2</p>
+        </div>
+        <div class="image">
+          <img src="img/initial-selection.png" alt="The selection pane for the animation, showing the graph and three rectangles" width="303px">
+          <p>Fig. 3</p>
+        </div>
+      </div>
       <p>The cleaner version of this has only one rectangle that moves out of the way with a linear motion path and finally exits with a fly out animation. While both of these approaches can result in the same reading order if all of the obscuring elements are marked as decorative, the second version makes it less likely for that step to be forgotten, and if there is an issue that results in those elements being read regardless, it minimizes the amount of elements that don't contribute to the understanding of the slide's content.</p>
+      <div class="bank">
+        <div class="image">
+          <img src="img/graph-revised.gif" alt="the same animation of a graph being revealed in three parts with slightly smoother movement" height="300px">
+          <p>Fig. 4</p>
+        </div>
+        <div class="image">
+          <img src="img/revised-anim-pane.png" alt="The animation pane for the animation, showing one rectangle with two line motion paths and one fly out animation" width="303px">
+          <p>Fig. 5</p>
+        </div>
+        <div class="image">
+          <img src="img/revised-selection.png" alt="The selection pane for the animation, showing the graph and one rectangle" width="303px">
+          <p>Fig. 6</p>
+        </div>
+      </div>
+      <h3>Reduce redundant alt text</h3>
+      <p>When there are multiple parts of the animation that are redundant but can't be simplified, mark them as decorative if possible or leave their alt text blank and add alt text that describes the animation, or that part of the animation, as a whole.</p>
+      <!-- TODO: add link to alt text page -->
+      <div class="bank">
+        <div class="image">
+          <img src="img/truck-animation.gif" alt="an animation of a warehouse sending trucks to three houses" height="300px">
+          <p>Fig. 7</p>
+        </div>
+        <div class="image">
+          <img src="img/buildings-alt-text.png" alt="the alt text for the buildings" width="303px">
+          <p>Fig. 8</p>
+        </div>
+        <div class="image">
+          <img src="img/trucks-alt-text.png" alt="the alt text panel for the trucks, showing they are marked as decorative" width="303px">
+          <p>Fig. 9</p>
+        </div>
+      </div>
+      <p>In this example, the warehouse and houses are one image that has the alt text for the animation: "an animation of a warehouse sending trucks to three houses", and the trucks themselves are marked as decorative.</p>
     </main>
   </body>
   <hr>
