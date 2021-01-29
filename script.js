@@ -108,10 +108,10 @@ window.onload=function(){
 };
 
 /**
- * A function that sets header title of the page according to the parent <title> tag.
+ * A function that sets header title of the page according to the parent <title> tag
  *
  * it takes the @parent_title object (<title>) from the parent page and puts its text in
- * the current page's <h1> that is inside top.html <header> tag with @page_title id.
+ * the current page's <h1> that is inside top.html <header> tag with @page_title id
  */
 window.onload = function(){
         const parent_title = document.getElementsByTagName("title");
@@ -119,3 +119,16 @@ window.onload = function(){
 
         page_title.innerText = $(parent_title).text();
     };
+
+/**
+ * A function that loads header and footer
+ *
+ * top.html contains the header (a local directory file)
+ * footer.html contains the footer (a parent directory file)
+ */
+window.onload = function(){
+    $(function(){
+        $("#header-file").load("top.html");
+        $("#footer-file").load("../footer.html")
+    });
+}
