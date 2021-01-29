@@ -128,7 +128,7 @@ window.onload = function(){
  */
 window.onload = function(){
     $(function(){
-        $("#header-file").load("top.html");
+        $("#header-file").load("../top.html");
         $("#footer-file").load("../footer.html")
     });
 }
