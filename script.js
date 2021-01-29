@@ -1,24 +1,25 @@
-const menuButton = document.getElementsByClassName('menu-button')[0]
-const navbarLinks = document.getElementsByClassName('navbar-links')[0]
-const wordButton = document.getElementsByClassName('word-button')[0]
-const wordLinks = document.getElementsByClassName('word-links')[0]
-const pptButton = document.getElementsByClassName('ppt-button')[0]
-const pptLinks = document.getElementsByClassName('ppt-links')[0]
-const pdfButton = document.getElementsByClassName('pdf-button')[0]
-const pdfLinks = document.getElementsByClassName('pdf-links')[0]
-const videoButton = document.getElementsByClassName('video-button')[0]
-const videoLinks = document.getElementsByClassName('video-links')[0]
-const otherButton = document.getElementsByClassName('other-button')[0]
-const otherLinks = document.getElementsByClassName('other-links')[0]
+window.onload=function(){
+    const menuButton = document.getElementsByClassName('menu-button')[0]
+    const navbarLinks = document.getElementsByClassName('navbar-links')[0]
+    const wordButton = document.getElementsByClassName('word-button')[0]
+    const wordLinks = document.getElementsByClassName('word-links')[0]
+    const pptButton = document.getElementsByClassName('ppt-button')[0]
+    const pptLinks = document.getElementsByClassName('ppt-links')[0]
+    const pdfButton = document.getElementsByClassName('pdf-button')[0]
+    const pdfLinks = document.getElementsByClassName('pdf-links')[0]
+    const videoButton = document.getElementsByClassName('video-button')[0]
+    const videoLinks = document.getElementsByClassName('video-links')[0]
+    const otherButton = document.getElementsByClassName('other-button')[0]
+    const otherLinks = document.getElementsByClassName('other-links')[0]
 
-function getFileName() {
+    function getFileName() {
     var url = document.location.pathname;
     url = url.substring(url.lastIndexOf("/") + 1, url.length);
     return url;
-}
+    }
 
-// disables active dropdowns
-function clearActive() {
+    // disables active dropdowns
+    function clearActive() {
     if (wordLinks.classList.contains('active')) {
         wordLinks.classList.toggle('active')
         wordButton.classList.toggle('active')
@@ -39,18 +40,18 @@ function clearActive() {
         otherLinks.classList.toggle('active')
         otherButton.classList.toggle('active')
     }
-}
+    }
 
-// clears content dropdowns when window is resized
-$(window).resize(function() {
+    // clears content dropdowns when window is resized
+    $(window).resize(function() {
     clearActive()
-})
+    })
 
-menuButton.addEventListener('click', () => {
+    menuButton.addEventListener('click', () => {
     navbarLinks.classList.toggle('active')
     clearActive() // clears content dropdowns when closed
-})
-wordButton.addEventListener('click', () => {
+    })
+    wordButton.addEventListener('click', () => {
     if ($(window).width() < 800) {
         wordLinks.classList.toggle('active')
         wordButton.classList.toggle('active')
@@ -59,8 +60,8 @@ wordButton.addEventListener('click', () => {
     } else {
         window.location.href = '../word/word.html'
     }
-})
-pptButton.addEventListener('click', () => {
+    })
+    pptButton.addEventListener('click', () => {
     if ($(window).width() < 800) {
         pptLinks.classList.toggle('active')
         pptButton.classList.toggle('active')
@@ -69,8 +70,8 @@ pptButton.addEventListener('click', () => {
     } else {
         window.location.href = '../ppt/ppt.html'
     }
-})
-pdfButton.addEventListener('click', () => {
+    })
+    pdfButton.addEventListener('click', () => {
     if ($(window).width() < 800) {
         pdfLinks.classList.toggle('active')
         pdfButton.classList.toggle('active')
@@ -79,8 +80,8 @@ pdfButton.addEventListener('click', () => {
     } else {
         window.location.href = '../pdf/pdf.html'
     }
-})
-videoButton.addEventListener('click', () => {
+    })
+    videoButton.addEventListener('click', () => {
     if ($(window).width() < 800) {
         videoLinks.classList.toggle('active')
         videoButton.classList.toggle('active')
@@ -89,8 +90,8 @@ videoButton.addEventListener('click', () => {
     } else {
         window.location.href = '../video/video.html'
     }
-})
-otherButton.addEventListener('click', () => {
+    })
+    otherButton.addEventListener('click', () => {
     if ($(window).width() < 800) {
         otherLinks.classList.toggle('active')
         otherButton.classList.toggle('active')
@@ -99,4 +100,5 @@ otherButton.addEventListener('click', () => {
     } else {
         window.location.href = '../other/other.html'
     }
-})
+    })
+}
