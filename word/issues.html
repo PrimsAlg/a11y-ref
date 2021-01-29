@@ -3,83 +3,26 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Common Issues</title>
-    <link rel="stylesheet" type="text/css" href="../style.css">
+    <!--Bootstrap 5-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+
+    <!--JQuery Script to preload header and footer-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+      // load top.html which contains the header
+      // load footer.html which contains the footer
+      $(function(){
+        $("#header-file").load("top.html");
+        $("#footer-file").load("../footer.html")
+      })
+    </script>
+
+    <!--Initial Resources-->
+    <link rel="stylesheet" type="text/css" href="../style.css">
     <script src="../script.js" defer></script>
   </head>
   <body>
-    <div class="top">
-      <header>
-        <h1>Common Issues</h1>
-        <a href="#first" class="skip-nav">skip nav</a>
-        <a href="#" class="menu-button">
-          <img src="../img/menu.svg" alt="menu button">
-        </a>
-      </header>
-      <nav class="navbar">
-        <div class="navbar-links">
-          <ul>
-            <li><a href="../index.html" class="home">Home</a></li>
-            <li class="dropdown">
-              <a href="#" class="word-button">Word</a>
-              <div class="dropdown-content word-links">
-                <a href="../word/word.html">Word homepage</a>
-                <a href="../word/issues.html">Common issues</a>
-                <a href="../word/formatting.html">Formatting tools</a>
-                <a href="../word/tables.html">Table structure</a>
-                <a href="../word/styles.html">Styles and headings</a>
-              </div>
-            </li>
-            <li class="dropdown">
-              <a href="#" class="ppt-button">PowerPoint</a>
-              <div class="dropdown-content ppt-links">
-                <a href="../ppt/ppt.html">PowerPoint homepage</a>
-                <a href="../ppt/issues.html">Common issues</a>
-                <a href="../ppt/formatting.html">Formatting tools</a>
-                <a href="../ppt/embed.html">Embedded media</a>
-                <a href="../ppt/slide-master.html">Slide master</a>
-                <a href="../ppt/animations.html">Animations</a>
-              </div>
-            </li>
-            <li class="dropdown">
-              <a href="#" class="pdf-button">PDF</a>
-              <div class="dropdown-content pdf-links">
-                <a href="../pdf/pdf.html">PDF homepage</a>
-                <a href="../pdf/issues.html">Common issues</a>
-                <a href="../pdf/tags.html">Using the tags panel</a>
-                <a href="../pdf/order.html">Using the order panel</a>
-                <a href="../pdf/content.html">Using the content panel</a>
-                <a href="../pdf/table-editor.html">Using the table editor</a>
-                <a href="../pdf/scans.html">Handling scanned content</a>
-              </div>
-            </li>
-            <li class="dropdown">
-              <a href="#" class="video-button">Video</a>
-              <div class="dropdown-content video-links">
-                <a href="../video/video.html">Video homepage</a>
-                <a href="../video/uploading.html">Uploading</a>
-                <a href="../video/captioning.html">Captioning</a>
-                <a href="../video/transcript.html">Creating a transcript</a>
-                <a href="../video/amara.html">Captioning others' content</a>
-              </div>
-            </li>
-            <li class="dropdown">
-              <a href="#" class="other-button">Other</a>
-              <div class="dropdown-content other-links">
-                <a href="../other/other.html">Other homepage</a>
-                <a href="../other/alt-text.html">Writing alt text</a>
-                <a href="../other/headings.html">Headings</a>
-                <a href="../other/color.html">Color</a>
-                <a href="../other/font.html">Fonts</a>
-                <a href="../other/hyperlinks.html">Hyperlinks</a>
-                <a href="../other/office.html">Software comparison</a>
-                <a href="../other/lists.html">Lists</a>
-              </div>
-            </li>
-          </ul>
-        </div>
-      </nav>
-    </div>
+    <div id="header-file"></div>
     <div class="anchors">
       <ul>
         <li><a href="#whitespace">Repeated blank characters</a></li>
@@ -94,7 +37,7 @@
       <p>Screen readers can have trouble dealing with more than four whitespace characters in a row. This includes spaces, tabs, and newlines. Luckily, the fix to this is simply removing the offending characters. To aid in this, you can show whitespace characters in Word by clicking the paragraph symbol on the Home ribbon, or by using the keyboard shortcut Ctrl + Shift + 8. Sometimes, multiple carriage returns are used to add space within a document. If this is done to move to the next page, the newlines can be replaced by a page break. You can insert a page break either from Insert &gt; Page Break, or by pressing Ctrl + Enter. If the extra enters just make space between two sections, you can modify the space before or after a paragraph from the Line Spacing Options menu, available in the paragraph section of the Home ribbon. Just select the paragraph you wish add space before or after, and increase the respective value within the line spacing options.</p>
       <div class="bank">
         <div class="image">
-          <img src="img/whitespace.png" width="300" alt="short lorem ipsum text with four assorted whitespace characters between each word">
+          <img src="img/whitespace.png" class="img-fluid" width="300" alt="short lorem ipsum text with four assorted whitespace characters between each word">
         </div>
       </div>
       <p>Another common formatting practice that leads to this issue is using a large amount of spaces for horizontal alignment. This can be achieved much more efficiently and accurately by using tab stops. For more information on this feature, see the <a href="formatting.html">Formatting</a> page.</p>
@@ -104,7 +47,7 @@
       <p>Both of these issues revolve around there not being enough headings for the length of the document. To resolve this, assign the appropriate heading style to the headings in the document with the <a href="styles.html">Styles pane</a>. If the document has no headings, consider adding headings where it seems reasonable to do so. In some situations the document may be properly structured, but there may be a long space between headings. This issue may be ignored in these cases if the structure of the document sufficiently allows for navigation by headings. However, the presence of this issue should be taken as a sign that the document could probably benefit from more headings. If more headings still need to be added after all of the styles are applied, but the document is to appear as close to the original document as possible, then additional headings may be added to assist screen reader users by adding the headings in the spaces between paragraphs and coloring the text white to match the background. This should only be done in situations where the original document text cannot be perceptibly changed for a sighted user, as the proper structuring of documents is just good practice and benefits all readers. For more information on headings and document structure, see <a href="../other/headings.html">Headings</a>.</p>
       <div class="bank">
         <div class="image">
-          <img src="img/headings.png" height="600" alt="an example document showing one heading 1 with 5 level 2 headings beneath it">
+          <img src="img/headings.png" class="img-fluid" alt="an example document showing one heading 1 with 5 level 2 headings beneath it">
         </div>
       </div>
       <hr>
@@ -113,7 +56,7 @@
       <p>All images and other visual elements require <a href="../other/alt-text.html">alternate text</a> to describe the visual content. If you're using Word 2016, right click on the image and select Format Picture. The alt text field is in the third tab of the format menu, denoted by a box with arrows for width and height. If you're using Word 365, right click on the image and select Edit Alt Text.</p>
       <div class="bank">
         <div class="image">
-          <img src="img/alt-text.png" height="600" alt="a document with an image showing that the image has alt text">
+          <img src="img/alt-text.png" class="img-fluid" alt="a document with an image showing that the image has alt text">
         </div>
       </div>
       <hr>
@@ -122,7 +65,7 @@
       <p>Aside from adding <a href="../other/alt-text.html">alt text</a>, images and other alt texted objects need to be formatted such that they are inline, rather than floating or text-wrapped. Either select an image and click on the small Layout Options popup button that appears to the top right of the image or right click the image and open the Wrap Text submenu and ensure that the In Line with Text option is selected.</p>
       <div class="bank">
         <div class="image">
-          <img src="img/inline.png" height="600" alt="a document with an image showing that the image is inline">
+          <img src="img/inline.png" class="img-fluid" alt="a document with an image showing that the image is inline">
         </div>
       </div>
       <hr>
@@ -132,10 +75,5 @@
     </main>
   </body>
   <hr>
-  <footer>
-    <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">
-      <img src="../img/cc-by-nc-sa.svg" alt="Creative Commons License, Attribution, Non Commercial, Share Alike">
-    </a>
-    <p>Created by Alana Gomoll, 2020</p>
-  </footer>
+  <div id="footer-file"></div>
 </html>
