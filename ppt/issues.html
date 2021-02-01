@@ -3,83 +3,16 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Common Issues</title>
+    <!--Bootstrap 5 reference-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+
+    <!-- Custom style.css, jQuery reference, and custom script.js -->
     <link rel="stylesheet" type="text/css" href="../style.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="../script.js" defer></script>
   </head>
   <body>
-    <div class="top">
-      <header>
-        <h1>Common Issues</h1>
-        <a href="#first" class="skip-nav">skip nav</a>
-        <a href="#" class="menu-button">
-          <img src="../img/menu.svg" alt="menu button">
-        </a>
-      </header>
-      <nav class="navbar">
-        <div class="navbar-links">
-          <ul>
-            <li><a href="../index.html" class="home">Home</a></li>
-            <li class="dropdown">
-              <a href="#" class="word-button">Word</a>
-              <div class="dropdown-content word-links">
-                <a href="../word/word.html">Word homepage</a>
-                <a href="../word/issues.html">Common issues</a>
-                <a href="../word/formatting.html">Formatting tools</a>
-                <a href="../word/tables.html">Table structure</a>
-                <a href="../word/styles.html">Styles and headings</a>
-              </div>
-            </li>
-            <li class="dropdown">
-              <a href="#" class="ppt-button">PowerPoint</a>
-              <div class="dropdown-content ppt-links">
-                <a href="../ppt/ppt.html">PowerPoint homepage</a>
-                <a href="../ppt/issues.html">Common issues</a>
-                <a href="../ppt/formatting.html">Formatting tools</a>
-                <a href="../ppt/embed.html">Embedded media</a>
-                <a href="../ppt/slide-master.html">Slide master</a>
-                <a href="../ppt/animations.html">Animations</a>
-              </div>
-            </li>
-            <li class="dropdown">
-              <a href="#" class="pdf-button">PDF</a>
-              <div class="dropdown-content pdf-links">
-                <a href="../pdf/pdf.html">PDF homepage</a>
-                <a href="../pdf/issues.html">Common issues</a>
-                <a href="../pdf/tags.html">Using the tags panel</a>
-                <a href="../pdf/order.html">Using the order panel</a>
-                <a href="../pdf/content.html">Using the content panel</a>
-                <a href="../pdf/table-editor.html">Using the table editor</a>
-                <a href="../pdf/scans.html">Handling scanned content</a>
-              </div>
-            </li>
-            <li class="dropdown">
-              <a href="#" class="video-button">Video</a>
-              <div class="dropdown-content video-links">
-                <a href="../video/video.html">Video homepage</a>
-                <a href="../video/uploading.html">Uploading</a>
-                <a href="../video/captioning.html">Captioning</a>
-                <a href="../video/transcript.html">Creating a transcript</a>
-                <a href="../video/amara.html">Captioning others' content</a>
-              </div>
-            </li>
-            <li class="dropdown">
-              <a href="#" class="other-button">Other</a>
-              <div class="dropdown-content other-links">
-                <a href="../other/other.html">Other homepage</a>
-                <a href="../other/alt-text.html">Writing alt text</a>
-                <a href="../other/headings.html">Headings</a>
-                <a href="../other/color.html">Color</a>
-                <a href="../other/font.html">Fonts</a>
-                <a href="../other/hyperlinks.html">Hyperlinks</a>
-                <a href="../other/office.html">Software comparison</a>
-                <a href="../other/lists.html">Lists</a>
-              </div>
-            </li>
-          </ul>
-        </div>
-      </nav>
-    </div>
+    <div id="header-file"></div>
     <div class="anchors">
       <ul>
         <li><a href="#order">Check reading order</a></li>
@@ -130,10 +63,5 @@
     </main>
   </body>
   <hr>
-  <footer>
-    <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">
-      <img src="../img/cc-by-nc-sa.svg" alt="Creative Commons License, Attribution, Non Commercial, Share Alike">
-    </a>
-    <p>Created by Alana Gomoll, 2020</p>
-  </footer>
+  <div id="footer-file"></div>
 </html>
