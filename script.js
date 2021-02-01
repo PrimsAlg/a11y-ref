@@ -118,7 +118,7 @@ window.onload = function(){
         const page_title = document.getElementById("page_title");
 
         page_title.innerText = $(parent_title).text();
-    };
+};
 
 /**
  * A function that loads header and footer
@@ -126,9 +126,7 @@ window.onload = function(){
  * top.html contains the header (a local directory file)
  * footer.html contains the footer (a parent directory file)
  */
-window.onload = function(){
-    $(function(){
-        $("#header-file").load("../top.html");
-        $("#footer-file").load("../footer.html")
-    });
-}
+$(function(){
+    $("#header-file").load("../top.html");
+    $("#footer-file").load("../footer.html")
+});
